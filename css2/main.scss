@@ -1,0 +1,64 @@
+$ten: 10px;
+$main-color: #94acb6;
+$ff: Arial, Helvetica, sans-serif;
+
+body {
+    font-size: $ten;
+    background-color: $main-color;
+    font-family: $ff; 
+}
+
+
+// kontener main
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; // by default
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    font-size: 2em;
+    background-color: white;
+    box-shadow: 0 0 4px 0 #000;
+}
+
+
+.logo {
+    flex-basis: 200px;
+    height: 110px;
+    background-color: #914acb;
+}
+
+.search {
+    background-color: #31428a;
+    flex-grow: 1;
+}
+
+.settings {
+    background-color: #318a4f;
+}
+
+
+.menu {
+    flex-basis: 100%;
+    background-color: #998bbb;
+}
+
+
+.main-articles {
+    background-color: #c0a1a1;
+    flex-basis: 100%;
+    min-height: 200px;
+}
+
+.article-list {
+    background-color: #7e1f7e;
+    flex-basis: 100%;
+}
+
+
+.footer {
+    background-color: #5e70ad;
+    flex-basis: 100%;
+}
