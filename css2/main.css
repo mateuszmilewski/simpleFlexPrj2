@@ -108,7 +108,50 @@ body {
 .menu {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: #998bbb;
+  background-color: #817a92;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 70px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.menu__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu__item:hover {
+  border-bottom: 2px solid yellowgreen;
+}
+
+.menu__item:nth-last-child(1) {
+  margin-left: auto;
+  border: 2px solid #666;
+}
+
+.menu__item:nth-last-child(1):hover {
+  border-color: #000;
+}
+
+.menu__item:nth-last-child(1) .menu__link {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.menu__link {
+  display: block;
+  padding: 0 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main-articles {

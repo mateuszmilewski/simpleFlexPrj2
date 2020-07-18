@@ -1,6 +1,7 @@
 $ten: 10px;
 $main-color: #94acb6;
 $ff: Arial, Helvetica, sans-serif;
+$ff2: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 body {
     font-size: $ten;
@@ -102,7 +103,51 @@ body {
 
 .menu {
     flex-basis: 100%;
-    background-color: #998bbb;
+    background-color: #817a92;
+    font-family: $ff2;
+
+    height: 70px;
+    padding-left: 40px;
+    padding-right: 20px;
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &:hover {
+            border-bottom: 2px solid yellowgreen;
+        }
+
+        &:nth-last-child(1) {
+            margin-left: auto;
+
+            border: 2px solid #666;
+
+
+            &:hover {
+                border-color: #000;
+            }
+
+            .menu__link {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 0 10px;
+        color: whitesmoke;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 }
 
 
