@@ -56,7 +56,7 @@ body {
 .search__in {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  height: 50%;
+  height: 40%;
   margin-right: 10px;
   padding: 0 10px;
   font-size: 1.4rem;
@@ -69,7 +69,7 @@ body {
 
 .search__btn {
   font-size: 1.4rem;
-  height: 50%;
+  height: 40%;
   padding: 0 10px;
   border: 2px solid black;
   background-color: whitesmoke;
@@ -86,7 +86,23 @@ body {
 }
 
 .settings {
-  background-color: #318a4f;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+
+.settings__link {
+  text-decoration: none;
+  color: black;
+}
+
+.settings__link:hover {
+  color: #a08989;
 }
 
 .menu {
